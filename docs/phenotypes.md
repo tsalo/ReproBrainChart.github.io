@@ -5,17 +5,21 @@ sitemap: false
 layout: single
 permalink: /docs/phenotypes
 ---
-## Measures in the RBC
-The RBC integrates baseline data from six cohorts. However, as it is common in the field, different measures are used. Four cohorts (HBN, NKI-RS, BHRCS and dCCNP) use the latest version of the Child and Behavioral Checklist (CBCL), PACCT uses a previous version of this instrument, and the PNC uses the GOASSESS questionnaire. The CBCL is a 120-item parent-report assessment of emotional and behavioral symptoms over the past 6 months, answered on a 3-point scale (0 = not true, 1 = somewhat/sometimes true, and 2 = very true/often). The GOASSESS is a structured screening questionnaire applied by trained interviewers to the caregivers that contains 112 unconditioned screening items based on 14 DSM-IV diagnosis, scored as 0 (absent) or 1 (ever present).
- 
-## Measure harmonization
-The RBC understands that scores from different questionnaires can only be compared if harmonized. Therefore, we matched 36 items among questionnaires based of item semantic content, and used the matched items in factor models, containing all six cohorts, to extract factor scores for each participant, which weights item relevance to inform the level of mental health problems for each individual.
- 
-## Models of psychopathology
-We tested 12 bifactor models of psychopathology, based on previous literature on the questionnaires used by the cohorts within the RBC. We focused on bifactor models to parse out general and specific constructs of emotional and behavioral phenotype, as previous evidence demonstrates advantages to capture neurobiological signatures when general and specific dimensions of psychopathology are extracted from the data. In a bifactor model, one dimension informs the variability of all items and the remain variance is explained by specific factors, which are not correlated among themselves nor with the general factor.
 
-## Main RBC model
-The model published by McElroy et al (2018) was chosen as this model better fit in all RBC cohorts, as an invariant measure of psychopathology (i.e., not influenced by the cohort but by the dimensions of mental health problems only).  This model contains 22 harmonized items, in a model with one general factor and internalizing, externalizing and attention/hyperactivity specific factors.
+ Advanced brain imaging is not enough for studies of brain development to be useful to understanding developmental psychopathology.  RBC responds to a common obstacle in aggregating data across studies -- different questionnaires can only be compared if harmonized.  To this end, we harmonized instruments across studies to derive comparable dimensions of psychopathology.  
+ 
+
+### Measures in the RBC
+The RBC integrates baseline psychiatric phenotyping data from six important developmental studies. We focused on one of the most widely-used assessments the Child and Behavioral Checklist (CBCL).  The CBCL is a 120-item parent-report assessment of emotional and behavioral symptoms over the past 6 months, answered on a 3-point Likert-type scale.  However -- as it is common in the field -- different measures were used across these studies. Four studies (HBN, NKI-RS, BHRCS and CCNP) used the latest version of the CBCL. In contrast, PACCT used the 1991 version of this instrument, while the PNC used the GOASSESS -- a highly structured psychiatric interview. 
+ 
+## Bifactor models of psychopathology
+We tested 12 models of psychopathology ([Hoffmann et al., 2023](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10485343/)), focusing on bifactor models to disentangle general and specific dimensions psychopathology. In a bifactor model, a general factor captures overall trans-diagnostic psychopathology (the “p” factor), while specific factors model distinct and dimensions of psychopathology. One advantage of this framework is that the general and specific factors are uncorrelated.  
+
+## Harmonization Procedures
+We conducted a sequence of analyses to generate scores for a bifactor model that was harmonized across datasets.  irst, we tested the impact of various bifactor models to see which one worked best in terms of fit, internal consistency, invariance and convergent validity (REF). Next, we looked at different item-matching strategies to harmonize CBCL and GOASSESS and selected the expert-based 1-to-1 item matching as the best strategy (REF). Finally, we used the results from the first two steps to select a model that harmonizes our data set well (REF). 
+
+## Main RBC Model 
+We found that the model, described by McElroy et al (2018), was the best option.  This model fit the data very well.  More importantly, it also displayed measurement invariance across questionnaires and retained the best proportion of the original.  This model included 22 harmonized items, which contribute to a model with one general factor as well as internalizing, externalizing and attention/hyperactivity specific factors.
 
 
 
