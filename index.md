@@ -86,12 +86,14 @@ author_profile: false
      <h2>Contributing Institutions</h2>
      <br/>
 
-     <div style="display: flex; justify-content: space-between; width: 90%; margin: auto;">
-          <img src="/assets/images/logos/university_of_pennsylvania.png" style="height: 150px;" />
-          <img src="/assets/images/logos/child_mind_institute.png" style="height: 150px;" />
-          <img src="/assets/images/logos/beijing_normal_university.png" style="height: 150px;" />
-          <img src="/assets/images/logos/columbia_university.png" style="height: 150px;" />
-          <img src="/assets/images/logos/BHRC.png" style="height: 140px;" />
+     <div style="display: flex; justify-content: space-between; width: 100%; margin: auto;">
+          <img src="/assets/images/logos/university_of_pennsylvania.png" style="width: 60 px;height: 150px;" />
+          <img src="/assets/images/logos/child_mind_institute.png" style="width: 60 px;height: 150px;" />
+          <img src="/assets/images/logos/nki.png" style="width: 60 px;height: 150px;" />
+          <img src="/assets/images/logos/CHOP.png" style="width: 60 px;height: 150px;" />
+          <img src="/assets/images/logos/beijing_normal_university.png" style="width: 80 px;height: 150px;" />
+          <img src="/assets/images/logos/columbia_university.png" style="width: 100 px; height: 150px;" />
+          <img src="/assets/images/logos/BHRC.png" style="width: 100 px; height: 150px;" />
      </div>
 
 </div>
@@ -100,7 +102,7 @@ author_profile: false
 <br/>
 
 <div style="text-align: center;">
-     <h2>Data Downloads</h2>
+     <h2>RBC Downloads</h2>
      <br/>
 
      <iframe src="/assets/dashboard.html" width="100%" height="600px"></iframe>
