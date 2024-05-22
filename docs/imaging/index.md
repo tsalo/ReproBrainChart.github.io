@@ -13,3 +13,8 @@ Structural MRI data were processed using [FreeSurfer](https://surfer.nmr.mgh.har
 Functional MRI data were preprocessed using [C-PAC](https://fcp-indi.github.io/) (Craddock et al., 2013) and a dedicated configuration that was rigorously quality controlled on all RBC datasets, eventually yielding measures such as functional connectivity matrices, ReHo, and ALFF.
 Processed structural and functional data were parcellated with 16 commonly-used atlases.
 Critically, we provide fully harmonized measures of  quality control for both structural and functional images.
+
+
+<div style="text-align: center;">
+     <img src="/assets/images/misc/function_age_harmonized_website.png" width="700" height="300" />
+</div>

@@ -4,15 +4,6 @@ excerpt: "Image Processing"
 layout: single
 
 ---
-Each dataset was processed using [CPAC](https://fcp-indi.github.io/docs/nightly/user/quick) - or Configurable Pipeline for the Analysis of Connectomes. These steps were all carried out in [Datalad](https://www.datalad.org/) to keep track of provenance and ensure the ultimate reproducibility for all datasets. The C-PAC workflow proceeded according to the custom configuration file that was crafted specifically for RBC studies, which is available [here](https://github.com/FCP-INDI/C-PAC/blob/0182f98c61cb7fbb495c8300e6a6a7991c859240/CPAC/resources/configs/pipeline_config_rbc-options.yml#L172).
+The “FAIRly-big” strategy (Wagner et al., 2021) was adopted for reproducible image processing, ensuring all preparation and analyses were accompanied by a full audit trail in DataLad (Halchenko et al., 2021). Structural MRI data were processed using FreeSurfer and sMRIPrep, yielding commonly used measures of brain structure. RBC provides full FreeSurfer outputs and structural features in fsLR and fsaverage surface spaces. In addition, RBC provides tabulated data parcellated using 35 anatomical, functional, and multimodal atlases such as Desikan Killiany, Glasser, Gordon, and multiple Schaefer parcellations. Specific features include commonly used measures such as regional surface area, cortical thickness, gray matter volume, folding and curvature indices, etc. Moreover, summary brain measures (e.g., mean and standard deviation of various measures) are provided for the whole brain and per hemisphere. Tabulated data are also accompanied by .json files describing each structural feature in detail.
 
-Major outputs include:
-- Functional timeseries after cleaning
-- Functional connectivity matrices
-- ALFF (or amplitude of low frequency fluctuation)
-- ReHo (or regional homogeneity)
-- QC metrics
-- A list of nuisance regressors and motion parameters, respectively.
-
-
-A more detailed description of the list of outputs can be obtained [here](https://fcp-indi.github.io/docs/nightly/user/output_dir).
+Functional data were processed using [CPAC](https://fcp-indi.github.io/docs/nightly/user/quick) - or Configurable Pipeline for the Analysis of Connectomes (Craddock et al., 2013). These steps were all carried out in [Datalad](https://www.datalad.org/) to keep track of provenance and ensure the ultimate reproducibility for all datasets. Following [extensive benchmarking and harmonization studies](https://www.biorxiv.org/content/10.1101/2021.12.01.470790v3.abstract) (Li et al., 2021), C-PAC was executed using a configuration file that was crafted specifically for RBC, which is available [here](https://github.com/FCP-INDI/C-PAC/blob/0182f98c61cb7fbb495c8300e6a6a7991c859240/CPAC/resources/configs/pipeline_config_rbc-options.yml#L172). CPAC outputs include measures such fully-processed functional timeseries, functional connectivity matrices, ReHo (regional homogeneity), ALFF (amplitude of low frequency fluctuation), as well as extensive measures of quality control. Derivatives are available in volumetric MNI space as well as in parcellated format using 16 different atlases, including Glasser and Schaefer parcellations. A more detailed description of the list of outputs can be obtained [here](https://fcp-indi.github.io/docs/nightly/user/output_dir).
