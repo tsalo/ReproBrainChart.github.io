@@ -5,9 +5,7 @@ layout: single
 
 ---
 
-RBC is a heterogeneous data resource that includes data that were acquired under diverse settings.  
-
-Structural imaging parameters for studies included in RBC were as follows:
+### Structural MRI
 
 | Study                                                             | Sequence | Scanner Type           | Voxel Sizes (mm)   | Image Orientation | Parallel Reduction Factor in Plane | TR (ms) | TE (ms) | Image Dimensions (voxels) | Flip Angle | Percentage in Dominant Group  |
 |-------------------------------------------------------------------|----------|------------------------|--------------------|-------------------|------------------------------------|---------|---------|---------------------------|------------|-------------------------------|
@@ -25,7 +23,7 @@ Structural imaging parameters for studies included in RBC were as follows:
 | Developmental Component of the Chinese Color Nest Project (CCNP)  | T1       | Siemens Tim Trio 3.0 T | 1 x 1 x 1          | RAS+              |                                    | 2600    | 3.02    | 176/256/256               | 8          | 97                            |
 |                                                                   |          |                        | \                  |                   |                                    |         |         |                           |            |                               |
 
-Fucnctional imaging parameters for studies included in RBC are detailed below:
+### Functional MRI
 
 | Study                                                             | Sequence        | Tasks                         | Time Acquisition Across Runs (min:sec) | Number of Volumes | Scanner Type           | Voxel Sizes (mm)   | TR (ms) | TE (ms) | Image Dimensions (voxels) | Flip Angle | Percentage in Dominant Group | Fmap Type  |
 |-------------------------------------------------------------------|-----------------|-------------------------------|----------------------------------------|-------------------|------------------------|--------------------|---------|---------|---------------------------|------------|------------------------------|------------|
