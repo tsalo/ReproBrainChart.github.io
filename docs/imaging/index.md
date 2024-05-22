@@ -1,10 +1,8 @@
 ---
-title: "Imaging"
+title: "RBC Neuroimaging"
 excerpt: "Imaging"
 layout: single
 ---
-
-## RBC Neuroimaging
 
 RBC aggregates structural (sMRI) and functional imaging (fMRI) data from five large, diverse studies of brain development
 All raw imaging data and meta-data was carefully curated to conform with the [Brain Imaging Data Structure (BIDS)](https://bids.neuroimaging.io/) in a fully-reproducible fashion using software that was developed for RBC -- [CuBIDS](https://cubids.readthedocs.io/en/latest/) (Covitz et al., 2022).
