@@ -1,5 +1,5 @@
 ---
-title: "RBC Neuroimaging"
+title: "Neuroimaging"
 excerpt: "Imaging"
 layout: single
 ---
