@@ -1,5 +1,5 @@
 main:
-- title: Datasets
+- title: Studies
   url: /docs/datasets
   sublinks:
     - title: "BHRC"
@@ -12,7 +12,7 @@ main:
       url: /docs/datasets/NKI
     - title: "PNC"
       url: /docs/datasets/PNC
-- title:  Psychiatric Phenotyping
+- title:  Psychiatry
   url: /docs/phenotypes
 - title: Imaging
   url: /docs/imaging
@@ -29,17 +29,19 @@ main:
       url: /docs/imaging/image_structural_qa
     - title: "Functional Image Quality"
       url: /docs/imaging/image_functional_qa
-- title: Community and Impact
+- title: Team
   url: /docs/community
   hidden: true
   sublinks:
     - title: "RBC Team"
       url: /docs/team
+- title: Impact 
+  url: /docs/community
+  hidden: true  
+  sublinks:
     - title: "Publications"
       url: /docs/community/publications
-    - title: "Get support"
-      url: /docs/community/get_support
-- title: Blog
+- title: News
   url: /docs/blog/index
 - title: <em style="font-style:normal; font-weight:bold; color:#3F8AAC;"> Get Data </em>
   url: /docs/get_data
