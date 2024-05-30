@@ -32,8 +32,8 @@ These studies were conducted in North America, China, and Brazil; see below for 
       <th>Sample Size</th>
       <th>Number of Sessions</th>
       <th>Average age</th>
-      <th>Structural MRI</th>
-      <th>Functional MRI</th>
+      <th>Structural MRI Sessions</th>
+      <th>Functional MRI Sessions</th>
     </tr>
   </thead>
   <tbody>
@@ -99,12 +99,20 @@ These studies were conducted in North America, China, and Brazil; see below for 
             n/a
           {% endif %}
         </td>
+        <td>
+          {% if dataset.number_of_sessions %}
+            {{ dataset.number_of_sessions }}
+            {% assign total_number_of_sessions = total_number_of_sessions | plus: dataset.number_of_sessions %}
+          {% else %}
+            n/a
+          {% endif %}
+        </td>
       </tr>
     {% endfor %}
     <tr>
       <td colspan="4">Total</td>
       <td>{{ total_sample_size }}</td>
-      <td></td>
+      <td> {{total_number_of_sessions }}</td>
       <td></td>
       <td>{{ total_smri_count }}</td>
       <td>{{ total_fmri_count }}</td>
