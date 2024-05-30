@@ -45,7 +45,7 @@ author_profile: false
 <br/>
 
 <p style="text-align:center;">
-     <p style="display:flex; align-items:left;">
+     <p style="display:flex;">
           <b>
                RBC: An open resource for studies of the developing brain and mental health
           </b>
@@ -56,7 +56,7 @@ author_profile: false
           To accelerate this effort, RBC aggregates several of the largest studies of brain development in youth as publicly available data resource for the scientific community.
      </p>
      <br>
-     <p style="display:flex; align-items:left;">
+     <p style="display:flex;">
           <b>
                A harmonized data resource
           </b>
@@ -69,7 +69,7 @@ author_profile: false
           This allows scientists to skip such time-consuming steps and make discoveries faster.
      </p>
      <br>
-     <p style="display:flex; align-items:left;">
+     <p style="display:flex;">
           <b>
                Reproducible and open science
           </b>
