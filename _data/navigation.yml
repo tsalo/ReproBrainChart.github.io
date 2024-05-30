@@ -30,17 +30,9 @@ main:
     - title: "Functional Image Quality"
       url: /docs/imaging/image_functional_qa
 - title: Team
-  url: /docs/community
-  hidden: true
-  sublinks:
-    - title: "RBC Team"
-      url: /docs/team
-- title: Impact 
-  url: /docs/community
-  hidden: true  
-  sublinks:
-    - title: "Publications"
-      url: /docs/community/publications
+  url: /docs/team
+- title: Publications 
+  url: /docs/community/publications
 - title: News
   url: /docs/blog/index
 - title: <em style="font-style:normal; font-weight:bold; color:#3F8AAC;"> Get Data </em>
