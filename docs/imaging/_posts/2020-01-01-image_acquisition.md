@@ -7,33 +7,79 @@ layout: single
 
 ### Structural MRI
 
-| Study                                                             | Sequence | Scanner Type           | Voxel Sizes (mm)   | Image Orientation | Parallel Reduction Factor in Plane | TR (ms) | TE (ms) | Image Dimensions (voxels) | Flip Angle | Percentage in Dominant Group  |
-|-------------------------------------------------------------------|----------|------------------------|--------------------|-------------------|------------------------------------|---------|---------|---------------------------|------------|-------------------------------|
-| Healthy Brain Network (HBN) - Staten Island                       | T1       | Siemens Avanto 1.5 T   | 1 x 1 x 1          | LAS+              | 2                                  | 2730    | 1.64    | 176/256/256               | 7          | 100                           |
-| Healthy Brain Network (HBN) - Rutgers University                  | T1       | Siemens Tim Trio 3.0 T | 0.80 x 0.80 x 0.80 | LAS+              | 2                                  | 2500    | 3.15    | 224/320/320               | 8          | 100                           |
-| Healthy Brain Network (HBN) - Rutgers University                  | T2       | Siemens Tim Trio 3.0 T | 0.80 x 0.80 x 0.80 | LAS+              | 2                                  | 3200    | 564     | 224/320/320               | 120        | 47                            |
-| Healthy Brain Network (HBN) - The City University of New York     | T1       | Siemens Tim Trio 3.0 T | 1 x 1 x 1          | LAS+              | 2                                  | 2500    | 2.9     | 176/256/256               | 8          | 94                            |
-| Healthy Brain Network (HBN) - The City University of New York     | T2       | Siemens Tim Trio 3.0 T | 1 x 1 x 1          | LAS+              | 2                                  | 3200    | 565     | 176/256/256               | 120        | 97                            |
-| Healthy Brain Network (HBN) - Citigroup Biomedical Imaging Center | T1       | Siemens Tim Trio 3.0 T | 1 x 1 x 1          | LAS+              | 2                                  | 2500    | 2.88    | 176/256/256               | 8          | 94                            |
-| Healthy Brain Network (HBN) - Citigroup Biomedical Imaging Center | T2       | Siemens Tim Trio 3.0 T | 1 x 1 x 1          | LAS+              | 2                                  | 3200    | 565     | 176/256/256               | 120        | 95                            |
-| Brazilian High Risk Cohort (BHRC)                                 | T1       | General Electric 1.5T  | 0.94 x 0.94 x 1.2  | RAS+              |                                    | 10.81   | 4.2     | 256/256/156               | 15         | 30                            |
-| Philadelphia Neurodevelopmental Cohort (PNC)                      | T1       | Siemens Tim Trio 3.0 T | 0.94 x 0.94 x 1    | RAS+              | 2                                  | 1810    | 3.51    | 92/256/160                | 9          | 100                           |
-| Nathan Kline Institute  - Rockland Sample (NKI)                   | T1       | Siemens Tim Trio 3.0 T | 1 x 0.98 x 0.98    | LAS+ and/or RAS+  | 2                                  | 1900    | 2.52    | 176/256/256               | 9          | 45                            |
-| Nathan Kline Institute  - Rockland Sample (NKI)                   | T2       | Siemens Tim Trio 3.0 T | 1 x 1 x 1          | LAS+              | 2                                  | 3200    | 306     | 176/256/256               | 120        | 33                            |
-| Developmental Component of the Chinese Color Nest Project (CCNP)  | T1       | Siemens Tim Trio 3.0 T | 1 x 1 x 1          | RAS+              |                                    | 2600    | 3.02    | 176/256/256               | 8          | 97                            |
-|                                                                   |          |                        | \                  |                   |                                    |         |         |                           |            |                               |
+<table style="font-size: 12px;">
+    <thead>
+        <tr>
+            <th>Study</th>
+            <th>Sequence</th>
+            <th>Scanner Type</th>
+            <th>Voxel Size (mm)</th>
+            <th>Image Orientation</th>
+            <th>Parallel Reduction Factor in Plane</th>
+            <th>TR (ms)</th>
+            <th>TE (ms)</th>
+            <th>Matrix Size (voxels)</th>
+            <th>Flip Angle (deg)</th>
+            <th>Dominant Group (%)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in site.data.smri_studies %}
+            <tr>
+                <td>{{ row.study }}</td>
+                <td>{{ row.sequence }}</td>
+                <td>{{ row.scanner }}</td>
+                <td>{{ row.voxel_size }}</td>
+                <td>{{ row.orientation }}</td>
+                <td>{{ row.inplane_acceleration }}</td>
+                <td>{{ row.tr }}</td>
+                <td>{{ row.te }}</td>
+                <td>{{ row.matrix_size }}</td>
+                <td>{{ row.flip_angle }}</td>
+                <td>{{ row.perc_dominant }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
 
 ### Functional MRI
 
-| Study                                                             | Sequence        | Tasks                         | Time Acquisition Across Runs (min:sec) | Number of Volumes | Scanner Type           | Voxel Sizes (mm)   | TR (ms) | TE (ms) | Image Dimensions (voxels) | Flip Angle | Percentage in Dominant Group | Fmap Type  |
-|-------------------------------------------------------------------|-----------------|-------------------------------|----------------------------------------|-------------------|------------------------|--------------------|---------|---------|---------------------------|------------|------------------------------|------------|
-| Healthy Brain Network (HBN) - Staten Island                       | fMRI            | Rest                          | 10:09                                  | 420               | Siemens Avanto 1.5 T   | 2.46 x 2.46 x 2.50 | 1450    | 40      | 78/78/54                  | 55         | 92                           | EPI        |
-| Healthy Brain Network (HBN) - Rutgers University                  | fMRI            | Rest, Peer, MovieDM, MovieTP  | 28:43                                  | 2155              | Siemens Tim Trio 3.0 T | 2.43 x 2.43 x 2.40 | 800     | 30      | 84/84/60                  | 31         | 97                           | EPI        |
-| Healthy Brain Network (HBN) - The City University of New York     | fMRI            | Rest, Peer, MovieDM, MovieTP  | 26:56                                  | 2020              | Siemens Tim Trio 3.0 T | 2.43 x 2.43 x 2.40 | 800     | 30      | 84/84/60                  | 31         | 97                           | EPI        |
-| Healthy Brain Network (HBN) - Citigroup Biomedical Imaging Center | fMRI            | Rest, Peer, MovieDM, MovieTP  | 28:43                                  | 2155              | Siemens Tim Trio 3.0 T | 2.43 x 2.43 x 2.40 | 800     | 30      | 84/84/60                  | 31         | 86                           | EPI        |
-| Brazilian High Risk Cohort (BHRC)                                 | fMRI            | Rest                          | 18:00                                  | 540               | General Electric 1.5T  | 1.88 x 1.88 x 4.5  | 2000    | 30      | 128/128/26                | 80         | 73                           | na         |
-| Philadelphia Neurodevelopmental Cohort (PNC)                      | fMRI            | Rest, Frac2back, ID-emo       | 4:15                                   | 565               | Siemens Tim Trio 3.0 T |  3 x 3 x 3         | 3000    | 32      | 64/64/46                  | 90         | 93.33                        | GRE        |
-| Nathan Kline Institute  - Rockland Sample (NKI)                   | fMRI-Singleband | Rest                          | 25:00:00                               | 600               | Siemens Tim Trio 3.0 T | 3 x 3 x 3.33       | 2500    | 30      | 72/72/38                  | 80         | 80                           | na         |
-| Nathan Kline Institute  - Rockland Sample (NKI)                   | fMRI-Multiband  | Rest, Checkerboard            | 61:17:00                               | 5700              | Siemens Tim Trio 3.0 T | 3 x 3 x 3          | 645     | 30      | 74/74/40                  | 60         | 29                           | na         |
-| Nathan Kline Institute  - Rockland Sample (NKI)                   | fMRI-Multiband  | Rest, Breathold, Checkerboard | 80:16:00                               | 3440              | Siemens Tim Trio 3.0 T | 2 x 2 x 2          | 1400    | 30      | 112/112/64                | 65         | 20                           | na         |
-| Developmental Component of the Chinese Color Nest Project (CCNP)  | fMRI            | Rest                          | 15:20                                  | 368               | Siemens Tim Trio 3.0 T | 3 x 3 x 3.33       | 2500    | 30      | 72/72/38                  | 80         | 85                           | na         |
+<table style="font-size: 12px;">
+    <thead>
+        <tr>
+            <th>Study</th>
+            <th>Sequence</th>
+            <th>Tasks</th>
+            <th>Total Time (min:sec)</th>
+            <th>Number of Volumes</th>
+            <th>Scanner Type</th>
+            <th>Voxel Size (mm)</th>
+            <th>TR (ms)</th>
+            <th>TE (ms)</th>
+            <th>Matrix Size (voxels)</th>
+            <th>Flip Angle (deg)</th>
+            <th>Dominant Group (%)</th>
+            <th>Field Map</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in site.data.fmri_studies %}
+            <tr>
+                <td>{{ row.study }}</td>
+                <td>{{ row.sequence }}</td>
+                <td>{{ row.tasks }}</td>
+                <td>{{ row.duration }}</td>
+                <td>{{ row.n_volumes }}</td>
+                <td>{{ row.scanner }}</td>
+                <td>{{ row.voxel_size }}</td>
+                <td>{{ row.tr }}</td>
+                <td>{{ row.te }}</td>
+                <td>{{ row.matrix_size }}</td>
+                <td>{{ row.flip_angle }}</td>
+                <td>{{ row.perc_dominant }}</td>
+                <td>{{ row.fmap }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
