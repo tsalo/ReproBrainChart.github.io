@@ -14,4 +14,4 @@ Shafiei, G, Esper, NB, Hoffmann, MS, Ai, L, Clucas , J, Covitz, S, Giavasis, S, 
 
 ### Core Publications
 
-{% include publications/core_publicationshtml %}
+{% include publications/core_publications.html %}
