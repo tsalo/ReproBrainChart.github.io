@@ -64,7 +64,7 @@ author_profile: false
      <p>
           Combining data across different studies is a challenge.
           Investigators are usually faced with different psychiatric assessments, multiple scanners, and discrepant processing pipelines.
-          RBC overcomes these obstacles by harmonizing mental health symptoms in a framework that capture major axes of psychiatric symptoms.
+          RBC overcomes these obstacles by harmonizing mental health symptoms in a framework that captures major axes of psychiatric symptoms.
           Similarly, imaging data is carefully curated, undergoes the same quality assurance protocol, and is processed using the same pipeline.
           This allows scientists to skip such time-consuming steps and make discoveries faster.
      </p>

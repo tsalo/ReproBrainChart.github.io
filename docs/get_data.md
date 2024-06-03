@@ -14,16 +14,16 @@ to get it installed.
 ### Step 2: Pick a dataset to clone
 
 You can find each of the unprocessed BIDS MRI data, processed functional and processed structural
-derivatives in their own git repositories.
+derivatives in their corresponding git repositories.
 
-The git repositories (you can find then all
+The git repositories (you can find them all
 [here](https://github.com/orgs/ReproBrainChart/repositories)) are consistently named such that:
 
  * If you're looking for BIDS MRI, the repo will be named `<study>_BIDS`
  * If you're looking for processed functional data, the repo will be named `<study>_CPAC`
- * If you're looking for BIDS MRI, the repo will be named `<study>_FreeSurfer`
+ * If you're looking for processed structural MRI, the repo will be named `<study>_FreeSurfer`
 
-where `<study>` is replaced with `HBN`, `NKI`, `PNC`, `BHRC` of `CCNP`.
+where `<study>` is replaced with `HBN`, `NKI`, `PNC`, `BHRC` or `CCNP`.
 
 
 ### Step 3: Clone the data and take a look
@@ -36,8 +36,8 @@ Getting data on to your system will involve running a command like this:
 $ datalad clone https://github.com/ReproBrainChart/<study>_<content>.git
 ```
 
-Suppose I'd like to get some processed anatomical data from PNC. I would replace `<study>`
-with `PNC` and `<content>` with `FreeSurfer`. My command would be
+Suppose I'd like to get some processed structural data from PNC. I would replace `<study>`
+with `PNC` and `<content>` with `FreeSurfer`. My command would be:
 
 ```bash
 $ datalad clone https://github.com/ReproBrainChart/PNC_FreeSurfer.git
@@ -57,7 +57,7 @@ but you now have a `DataLad` dataset with everything you need to look at some da
 #### Getting data
 
 That command probably finished a lot faster than you were expecting: PNC FreeSurfer has 1592
-subjects in it! But this is normal for `DataLad`. You will see a `PNC_FreeSurfer` directory
+subjects in it! But this is normal for `DataLad`. (Note that cloning the processed functional data (i.e., `CPAC` files) will take longer as `CPAC` functional outputs include more files compared to `FreeSurfer`.) You will see a `PNC_FreeSurfer` directory
 that you can look around in and see all the files you might want to copy to your workspace.
 
 For example, let's take a look at the data we might want from one of the PNC subjects:
