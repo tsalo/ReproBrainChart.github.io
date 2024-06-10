@@ -26,21 +26,42 @@ The git repositories (you can find them all
 where `<study>` is replaced with `HBN`, `NKI`, `PNC`, `BHRC` or `CCNP`.
 
 
-### Step 3: Clone the data and take a look
+### Step 3: Pick a QC threshold and release version to use
+
+When you download RBC data at a specific QC threshold you can be sure that
+any file you find in your downloaded data is usable for further analysis.
+RBC releases data at 3 different QC thresholds:
+
+ * `complete-pass`: Structural and BOLD data have passed QC
+ * `complete-artifact`: Structural data can be "Pass" or "Artifact", BOLD is "Pass"
+ * `warning-fail`: Contains all the RBC data including QC failures. This threshold
+  is not recommended and you'll have to explain why you chose this threshold in
+  any publication resulting from it.
+
+Lastly, you'll need to pick a _version_ of the data to get. Each time RBC makes
+changes to the data, it will be released with a new version number. By picking
+a version number for your RBC-based study you can be sure that your input data
+will never change. The current release of RBC is `0.1`.
+
 
 #### Cloning
 
 Getting data on to your system will involve running a command like this:
 
 ```bash
-$ datalad clone https://github.com/ReproBrainChart/<study>_<content>.git
+$ datalad clone \
+    https://github.com/ReproBrainChart/<study>_<content>.git \
+    -b <qc_threshold>-<version>
 ```
 
 Suppose I'd like to get some processed structural data from PNC. I would replace `<study>`
-with `PNC` and `<content>` with `FreeSurfer`. My command would be:
+with `PNC` and `<content>` with `FreeSurfer`. I only want to include data that has passed
+QC. I want the most recent release, version `0.1`. My command would be:
 
 ```bash
-$ datalad clone https://github.com/ReproBrainChart/PNC_FreeSurfer.git
+$ datalad clone \
+    https://github.com/ReproBrainChart/PNC_FreeSurfer.git \
+    -b complete-pass-0.1
 ```
 
 You will see some warnings such as these:
