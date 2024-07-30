@@ -16,7 +16,7 @@ Functional data were processed using [C-PAC](https://fcp-indi.github.io/docs/nig
 or Configurable Pipeline for the Analysis of Connectomes (Craddock et al., 2013).
 These steps were all carried out in [Datalad](https://www.datalad.org/) to keep track of provenance and ensure the ultimate reproducibility for all datasets.
 Following [extensive benchmarking and harmonization studies](https://www.biorxiv.org/content/10.1101/2021.12.01.470790v3.abstract) (Li et al., 2021), C-PAC was executed using a configuration file that was crafted specifically for RBC, which is available [here](https://github.com/FCP-INDI/C-PAC/blob/0182f98c61cb7fbb495c8300e6a6a7991c859240/CPAC/resources/configs/pipeline_config_rbc-options.yml#L172).
-C-PAC outputs include measures such fully-processed functional timeseries, functional connectivity matrices, ReHo (regional homogeneity), ALFF (amplitude of low frequency fluctuation), as well as extensive measures of quality control.
+C-PAC outputs include measures such as fully-processed functional timeseries, functional connectivity matrices, ReHo (regional homogeneity), ALFF (amplitude of low frequency fluctuation), as well as extensive measures of quality control.
 Derivatives are available in volumetric MNI space as well as in parcellated format using 16 different atlases, including Glasser and Schaefer parcellations.
 A more detailed description of the list of outputs can be obtained [here](https://fcp-indi.github.io/docs/nightly/user/output_dir).
 
