@@ -6,8 +6,7 @@ layout: single
 ---
 The [“FAIRly-big” strategy](https://www.nature.com/articles/s41597-022-01163-2) (Wagner et al., 2021) was adopted for reproducible image processing, ensuring all preparation and analyses were accompanied by a full audit trail in [Datalad](https://www.datalad.org/) (Halchenko et al., 2021).
 Structural MRI data were processed using [FreeSurfer](https://surfer.nmr.mgh.harvard.edu/) and [sMRIPrep](https://www.nipreps.org/smriprep/), yielding commonly used measures of brain structure
-RBC provides full FreeSurfer outputs and structural features in fsLR and fsaverage surface spaces.
-In addition, RBC provides tabulated data parcellated using 35 anatomical, functional, and multimodal atlases such as Desikan Killiany, Glasser, Gordon, and multiple Schaefer parcellations.
+RBC provides full FreeSurfer outputs as well as tabulated data parcellated using 35 anatomical, functional, and multimodal atlases such as Desikan Killiany, Glasser, Gordon, and multiple Schaefer parcellations.
 Specific features include commonly used measures such as regional surface area, cortical thickness, gray matter volume, folding and curvature indices, etc.
 Moreover, summary brain measures (e.g., mean and standard deviation of various measures) are provided for the whole brain and per hemisphere.
 Tabulated data are also accompanied by .json files describing each structural feature in detail.
