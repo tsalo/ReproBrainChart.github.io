@@ -32,6 +32,8 @@ The repositories (you can find them all
 
 where `<study>` is replaced with `HBN`, `NKI`, `PNC`, `BHRC` or `CCNP`.
 
+Note: Participant demographics and phenotypic data are under `<study>_BIDS` repository for each study and are named `study-<study>_desc-participants.tsv`.
+
 #### Choose a QC threshold
 
 When you download RBC data at a specific QC threshold you can be sure that
